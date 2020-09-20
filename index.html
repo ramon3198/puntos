@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Puntos casos de uso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Solucion de puntos de casos de uso completamente gratis" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+
+
+    <link  rel="icon"    href="logo.png" type="image/png" />
+
+    <!-- Plugins css -->
+    <link href="assets/libs/jquery-nice-select/nice-select.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+
+    <!-- ION Slider -->
+    <link href="assets/libs/ion-rangeslider/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tour css -->
+    <link href="assets/libs/hopscotch/hopscotch.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content">
+
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div id="caso" class="row">
+                    <div class="col-7">
+
+                        <h2>Puntos de caso de uso</h2>
+                    </div>
+                    <div class="col-5">
+                        <h3>RamónAristides Carcamo Perla CP16022</h3>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end page title -->
+
+            <!-- Bootstrap-select -->
+            <div class="row">
+                <div class="col">
+                    <div class="card-box">
+
+
+                        <div class="row justify-content-md-end justify-content-sm-end">
+                            <div class="col-sm-2 col-md-1"> <button id="limpiar" class="btn btn-outline-primary btn-rounded ">Limpiar</button></div>
+                            <div class="col-sm-2 col-md-2"> <button id="ejemplo" class="btn btn-outline-primary btn-rounded ">Ejemplo</button></div>
+                        </div>
+                        <div class="row titulo">
+                            <div class="col-10">
+                                <h3 class="">Solución</h3>
+                                <h4>Pesos de los Actores sin ajustar.</h4>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-10 ">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tipo de Actor</th>
+                                            <th scope="col">description</th>
+                                            <th scope="col">Peso(factor)</th>
+                                            <th style="width: 160px;" scope="col">Numero de Actores</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Simple</th>
+                                            <td>Otro sistema que interactúa con el sistema a desarrollar mediante una interfaz de programación (API). </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="a_s" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Medio</th>
+                                            <td>Otro sistema interactuando a través de un protocolo (ej. TCP/IP) o una persona interactuando a través de una interfaz en modo texto.</td>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="a_m" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Complejo</th>
+                                            <td>Una persona que interactúa con el sistema mediante una interfaz gráfica (GUI). </td>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="a_c" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <h4>Pesos de los casos de uso sin ajustar</h4>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tipo de Actor</th>
+                                            <th scope="col">description</th>
+                                            <th scope="col">Peso(factor)</th>
+                                            <th style="width: 160px;" scope="col">Numero de Actores</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Simple</th>
+                                            <td>Transacciones= 3 ó menos Clases= Menos de 5 </td>
+                                            <td>5</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="c_s" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Medio</th>
+                                            <td>Transacciones= 4 a 7 Clases= 5 a 10</td>
+                                            <td>10</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="c_m" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Complejo</th>
+                                            <td>Transacciones= Más de 7 transacciones Clases= Más de 10 clases
+                                            </td>
+                                            <td>15</td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="c_c" data-toggle="touchspin" type="text" value="0">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <h4>Factor de complejidad tecnica</h4>
+
+                        <div class="row justify-content-center ">
+                            <div class="col-10">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Factor tecnico</th>
+                                            <th scope="col">description</th>
+                                            <th scope="col">peso</th>
+                                            <th scope="col">Impacto</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">T1</th>
+                                            <td>Sistema distribuido</td>
+                                            <td>2</td>
+                                            <td>
+                                                <select id="uno" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T2</th>
+                                            <td>Objetivos de perfomance o tiempo de respuesta</td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="dos" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row">T3</th>
+                                            <td>Eficiencia del usuario final </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="tres" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T4</th>
+                                            <td>Procesamiento interno complejo </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="cuatro" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T5</th>
+                                            <td>El código debe ser reutilizable </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="cinco" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T6</th>
+                                            <td>Facilidad de instalación </td>
+                                            <td>0.5</td>
+                                            <td>
+                                                <select id="seis" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T7</th>
+                                            <td>Facilidad de uso</td>
+                                            <td>0.5</td>
+                                            <td>
+                                                <select id="siete" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T8</th>
+                                            <td>Portabilidad </td>
+                                            <td>2</td>
+                                            <td>
+                                                <select id="ocho" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T9</th>
+                                            <td>Fcilidad de cambio</td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="nueve" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T10</th>
+                                            <td>Concurrencia </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="diez" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T11</th>
+                                            <td>Incluye objetivos especiales de seguridad </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="once" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T12</th>
+                                            <td>Provee acceso directo a terceras partes </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="doce" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">T13</th>
+                                            <td>Se requiere facilidades especiales de entrenamiento a usuario</td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="trece" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <h4>Factor de complejidad ambiental</h4>
+
+                        <div class="row justify-content-center ">
+                            <div class="col-10">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Factor ambiental</th>
+                                            <th scope="col">description</th>
+                                            <th scope="col">peso</th>
+                                            <th scope="col">Impacto</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">E1</th>
+                                            <td>Familiaridad con el modelo de proyecto utilizado</td>
+                                            <td>1.5</td>
+                                            <td>
+                                                <select id="uno_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E2</th>
+                                            <td>Experiencia en la aplicación</td>
+                                            <td>0.5</td>
+                                            <td>
+                                                <select id="dos_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row">E3</th>
+                                            <td>Experiencia en orientación a objetos</td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="tres_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E4</th>
+                                            <td>Capacidad del analista lider</td>
+                                            <td>0.5</td>
+                                            <td>
+                                                <select id="cuatro_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E5</th>
+                                            <td>Motivación
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <select id="cinco_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E6</th>
+                                            <td>Estabilidad de los requerimientos </td>
+                                            <td>2</td>
+                                            <td>
+                                                <select id="seis_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E7</th>
+                                            <td>Personal part-time
+                                            </td>
+                                            <td>-1</td>
+                                            <td>
+                                                <select id="siete_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">E8</th>
+                                            <td>Dificultad del lenguaje de programación </td>
+                                            <td>-1</td>
+                                            <td>
+                                                <select id="ocho_" class="selectpicker" data-style="btn-outline-primary">
+                                                            <option>0</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <button id="calcular" class="btn btn-outline-primary btn-rounded btn-block">Calcular</button>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <div id="resultado" class="row justify-content-center resultado ">
+                            <h4>CÁLCULO DEL ESFUERZO TOTAL EN HORAS-HOMBRE
+                            </h4>
+                            <div class="col-10">
+                                <table class="table table-bordered table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Actividad</th>
+                                            <th scope="col">Porcentaje</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Análisis</th>
+                                            <td id="analisis">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Diseño</th>
+                                            <td id="diseno"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Programación</th>
+                                            <td id="programacion"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Pruebas</th>
+                                            <td id="pruebas"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Gestión del Proyecto</th>
+                                            <td id="proyecto">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Total horas del proyecto</th>
+                                            <td id="totalhoras">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="row justify-content-md-center p-0">
+
+                                </div>
+                                <div id="llegar" class="row">
+                                    <!--  <div class="col-6">
+                                         <h4 id="slider"></h4> 
+                                    <table class="table table-bordered table-responsive-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Descripcion</th>
+                                                <th scope="col">Datos</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <th scope="row">Equipo</th>
+                                                <td id="equipo" colspan="2"></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Horas</th>
+                                                <td id="horas" colspan="2"></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
+                                    <div class="col-md-6">
+                                        <div class="card-box">
+                                            <h4 class="header-title">Grupo de trabajo</h4>
+
+                                            <input type="text" id="range_15">
+                                        </div>
+                                        <div class="col">
+                                            <h4 id="slider"></h4>
+                                        </div>
+                                    </div>
+                                    <!--    <div class="w-100"></div> -->
+                                    <div class="col-md-6">
+                                        <div class="card-box">
+                                            <h4 class="header-title">Horas laborales</h4>
+
+                                            <input type="text" id="range_1">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row p-0">
+
+                                    <div class="col">
+                                        <div class="alert alert-primary" role="alert">
+                                            <h3 class="alert-heading">Conclusion</h3>
+                                            <p>
+                                                <h4 id="conclusion">
+                                                </h4>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <div class="row justify-content-md-end">
+                                    <div class="col-2">
+                                        <div id="imprimir" class="col-2"><button class="btn btn-outline-primary btn-rounded">Imprimir</button></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div id="malo" class="row p-0">
+
+                            <div class="col">
+                                <div class="alert alert-primary" role="alert">
+                                    <h3 class="alert-heading">Conclusion</h3>
+                                    <p>
+                                        <h4 id="conclu">
+                                        </h4>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--   <div class="col-md-3">
+                                        <p class="text-muted font-13 mt-3 mt-md-0">
+                                            Youjjj can limit the number of elements you are allowed to select via the
+                                            <code>
+                                                    data-max-option
+                                                </code> attribute. It also works for option groups.
+                                        </p>
+
+                                        <select class="selectpicker" data-style="btn-outline-primary">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select> -->
+                            <!-- 
+                                        <br />
+                                        <br />
+                                        <select class="selectpicker" data-style="btn-outline-success">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+
+                                        <br />
+                                        <br />
+                                        <select class="selectpicker" data-style="btn-outline-warning">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+
+                                        <br />
+                                        <br />
+                                        <select class="selectpicker" data-style="btn-info">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+
+                                        <br />
+                                        <br />
+                                        <select class="selectpicker" data-style="btn-danger">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+
+                                        <br />
+                                        <br />
+                                        <select class="selectpicker" data-style="btn-purple">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Relish</option>
+                                            </select>
+
+                                        <p class="text-muted mt-3 font-13">
+                                            Add an icon to an option or optgroup with the <code>data-icon</code> attribute:
+                                        </p>
+                                        <select class="selectpicker mb-0" data-style="btn-pink">
+                                                <option data-icon="mdi mdi-camera-iris mr-1">Mustard</option>
+                                                <option data-icon="mdi mdi-cards-club mr-1">Ketchup</option>
+                                                <option data-icon="mdi mdi-cart-outline mr-1">Relish</option>
+                                                <option data-icon="mdi mdi-checkerboard mr-1">Mayonnaise</option>
+                                                <option data-icon="mdi mdi-coffee-outline mr-1">Barbecue Sauce</option>
+                                            </select> -->
+
+                        </div>
+                        <!-- end col-->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end card-box -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row-->
+
+
+
+    </div>
+    <!-- END wrapper -->
+
+
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <script src="assets/libs/jquery-nice-select/jquery.nice-select.min.js"></script>
+    <script src="assets/libs/switchery/switchery.min.js"></script>
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="js/datos.js"></script>
+
+    <!-- Ion Range Slider-->
+    <script src="assets/libs/ion-rangeslider/ion.rangeSlider.min.js"></script>
+
+    <!-- Range slider init js-->
+    <script src="assets/js/pages/range-sliders.init.js"></script>
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet alert init js-->
+    <script src="assets/js/pages/sweet-alerts.init.js"></script>
+
+
+    <!-- Tour page js -->
+    <script src="assets/libs/hopscotch/hopscotch.min.js"></script>
+
+
+    <!-- Init js-->
+    <script src="assets/js/pages/form-advanced.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
